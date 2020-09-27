@@ -1,7 +1,7 @@
 
 **
 
-> Achtung: im Moment ist die interrne SPannungsversorgung auf der
+> Achtung: im Moment ist die interrne Spannungsversorgung auf der
 > Hauptplatine abgeklemmt !!! (Grund: Sensor muß mit 12 VDC versorgt
 > werden)
 
