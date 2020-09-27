@@ -47,13 +47,11 @@ damit ergeben sich für das Kabel zum Node
 
  - blau vom Sensor wird gürn zum Node 
  - braun vom Sensor wird orange zum Node 
-   shield vom Sensorkabel wird schwarz zum Node
+ - shield vom Sensorkabel wird schwarz zum Node
 
 der Node wird per mitgelieferten USB Kabel am PC eingerichtet, dafür benötigt man die Software URSALINK Toolbox in der aktuellen Version die erstmalige Einrichtung und Anbindung in eine TTN Application ist sehr gut in der Bedienungsanleitung vom Node beschrieben.
 
 Nach der Einrichtung wird der Node mit dem Netzteil betrieben, damit auch der Sensor mit ausreichend Spannung (12 Volt) versorgt werden kann. Die Umrechnung der Stromstärke in Wassertiefe ist einfach und wird nach folgenden Überlegungen gemacht:
-
-*Text folgt*
 
 --------------
 
