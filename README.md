@@ -87,3 +87,11 @@ neuer Messwert 4,57mA
 1kPa=10cm
 1,275 KPa = 12,75cm Wasserpegel
 *dieser Wert wurde wieder mit dem Zollstock überprüft: 13cm Wassertiefe im Eimer*
+
+**Nützliche Links**
+
+ - [URSALINK NC11-N1
+   Sensornode](https://www.ursalink.com/en/n1-lorawan-sensor-node/)
+
+   [Vegawell52 Water Level
+   Sensor](https://www.vega.com/de-de/produkte/ger%C3%A4tesuche?serialnumber=37987318)
