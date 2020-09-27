@@ -58,40 +58,47 @@ Nach der Einrichtung wird der Node mit dem Netzteil betrieben, damit auch der Se
 **Rechenbeispiel:**
 Sensor hat einen Meßbereich analog 4-20mA
 dies entspricht 0-40 kPa ( 0-0,4 bar)
-4,00 mA = 0 Meter = 0kPa
-20,00 mA =  ?    
-pro 10m Wassertiefe 100kPa
-also 1m Wassertiefe 10kPa
-und damit 1kPa = 10cm
+
+    4,00 mA = 0 Meter = 0kPa
+    20,00 mA =  ?    
+    pro 10m Wassertiefe 100kPa
+    also 1m Wassertiefe 10kPa
+    und damit 1kPa = 10cm
+
 damit 20mA = 40kPa = 0,4 bar 
 
-16mA quantitaviver Wert (20-4=16) entsprechen 40kPa
-1mA = 2,5kPa
-0,4mA = 1kPa = 10 cm
+    16mA quantitaviver Wert (20-4=16) entsprechen 40kPa
+    1mA = 2,5kPa
+    0,4mA = 1kPa = 10 cm
 
 **Test vom Sensor mit einem 10L Eimer Wasser:**
-Meßwert = 4,06mA  im leeren Eimer
-Einfüllen von Wasser: 4,91mA
-4,91 - 4,06 = 0,85mA Änderung
-1mA = 2,5 kPa
-0,85mA = 2,125 kPa
-1kPa=10cm
-2,125 kPa = 21,25 cm Wasserpegel
-*dieser Wert wurde mit dem Zollstock überprüft: 22cm Wassertiefe im Eimer*
+Über die TTN Console lesen wir den Meßwert = 4,06mA  im leeren Eimer
+Einfüllen von Wasser in den Eimer ergibt einen Messwert von: 4,91mA
 
-dann wurde etwa die Hälfte vom Eimer ausgegossen
-neuer Messwert 4,57mA
-4,57 - 4,06 = 0,51 mA Änderung
-1mA = 2,5 kPa
-0,51mA = 1,275 kPa
-1kPa=10cm
+    4,91 - 4,06 = 0,85mA Änderung
+    1mA = 2,5 kPa
+    0,85mA = 2,125 kPa
+    1kPa=10cm
+
+2,125 kPa = 21,25 cm Wasserpegel
+*(dieser Wert wurde mit dem Zollstock überprüft: 22cm Wassertiefe im Eimer)*
+
+dann wurde (um Funktion zu Überprüfen) etwa die Hälfte vom Eimer ausgegossen,
+neuer Messwert 4,57mA werden in der TTN Console angezeigt.
+
+    4,57 - 4,06 = 0,51 mA Änderung
+    1mA = 2,5 kPa
+    0,51mA = 1,275 kPa
+    1kPa=10cm
+
 1,275 KPa = 12,75cm Wasserpegel
-*dieser Wert wurde wieder mit dem Zollstock überprüft: 13cm Wassertiefe im Eimer*
+*(dieser Wert wurde wieder mit dem Zollstock überprüft: 13cm Wassertiefe im Eimer)*
+
 
 **Nützliche Links**
 
- - [URSALINK NC11-N1
-   Sensornode](https://www.ursalink.com/en/n1-lorawan-sensor-node/)
+ - [URSALINK NC11-N1       Sensornode](https://www.ursalink.com/en/n1-lorawan-sensor-node/)   
+- [Vegawell52 Water Level       Sensor](https://www.vega.com/de-de/produkte/ger%C3%A4tesuche?serialnumber=37987318) 
+- [Payload Decoder für die TTN Console (Original von    Ursalink)](https://github.com/Ursalink-CN/ursalink-decoder)
 
-   [Vegawell52 Water Level
-   Sensor](https://www.vega.com/de-de/produkte/ger%C3%A4tesuche?serialnumber=37987318)
+
