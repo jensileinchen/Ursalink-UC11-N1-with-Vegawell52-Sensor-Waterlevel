@@ -1,10 +1,16 @@
 
-Achtung: im Moment ist die interrne SPannungsversorgung auf der Hauptplatine abgeklemmt !!! (Grund: Sensor muß mit 12 VDC versorgt werden)
+**
 
-![Sensor mit Node und Netzteil](https://github.com/jensileinchen/Lora-TTN-Vegawell52-Water-level-meter/blob/master/PICTURE.jpg)
+> Achtung: im Moment ist die interrne SPannungsversorgung auf der
+> Hauptplatine abgeklemmt !!! (Grund: Sensor muß mit 12 VDC versorgt
+> werden)
+
+**
+
+![Bild: Sensor mit Node und Netzteil](https://github.com/jensileinchen/Lora-TTN-Vegawell52-Water-level-meter/blob/master/PICTURE.jpg)
 
 # Lora-TTN-Vegawell52-Water-level-meter
-Vegawell52 with Ursalink UC11-N1 868MHz
+Vegawell52 with Ursalink UC11-N1 868MHz (Europe Version)
 
 *Vorstellung der Hardware*
 
@@ -15,44 +21,47 @@ Vegawell52 with Ursalink UC11-N1 868MHz
 Vorbereitungen / Aufbau / Anschlüsse
 Node vorbereiten, dazu muß der Deckel geöffnet werden
 
- - einstellen AI2 input = 4-20mA (DIP-Schalter)
- - einstellen Vout für Interface2 = 12 Volt (DIP-Schalter)
- - mitgeliefertes USB-Datenkabel mit Spannungsversorgung  anschließen und Node einrichten
- - ohne Sensor prüfen, ob das Gerät im TTN angemeldet ist
+ 
+
+     - einstellen AI2 input = 4-20mA (DIP-Schalter)
+     - einstellen Vout für Interface2 = 12 Volt (DIP-Schalter)
+     - mitgeliefertes USB-Datenkabel mit Spannungsversorgung  anschließen und Node einrichten
+     - ohne Sensor prüfen, ob das Gerät im TTN angemeldet ist
 
 Spannungsversorgung Node UC11-N1   Standard M12/4 Kabel
 *Ansicht Stecker vom Node*
 
- - Pin 1 = GND (-) 
- - Pin 2 = USB D+ 
- - Pin 3 = USB D- 
- - Pin 4 = VCC (5-24 Volt DC)
+     - Pin 1 = GND (-) 
+     - Pin 2 = USB D+ 
+     - Pin 3 = USB D- 
+     - Pin 4 = VCC (5-24 Volt DC)
 
 Kabel (Standard Sensor Kabel M12/4 (Buchse wird benötigt)
 
- - 1 = weiss 
- - 2 = blau 
- - 3 = schwarz 
- - 4 = braun
+     - 1 = weiss 
+     - 2 = blau 
+     - 3 = schwarz 
+     - 4 = braun
 
 damit wird der Node angeschlossen am Netzteil mit
 
- - braun = GND 
- - weiss = 24 VDC
+     - braun = GND 
+     - weiss = 24 VDC
 
 Sensor Vegawell anschließen
 
- - blau   = Signal 4-20mA 
- - braun  = VDC+ 
- - shield = GND
+     - blau   = Signal 4-20mA 
+     - braun  = VDC+ 
+     - shield = GND
+     - das blaue Röhrchen ist die Druck-Kapillare um den Referenzdruck zu kalibrieren !
 
 damit ergeben sich für das Kabel zum Node
 
- - blau vom Sensor wird gürn zum Node 
- - braun vom Sensor wird orange zum Node 
- - shield vom Sensorkabel wird schwarz zum Node
+     - blau vom Sensor = grün zum Node 
+     - braun vom Sensor = orange zum Node 
+     - shield vom Sensorkabel = schwarz zum Node
 
-der Node wird per mitgelieferten USB Kabel am PC eingerichtet, dafür benötigt man die Software URSALINK Toolbox in der aktuellen Version die erstmalige Einrichtung und Anbindung in eine TTN Application ist sehr gut in der Bedienungsanleitung vom Node beschrieben.
+der Node wird zuerst per mitgelieferten USB Kabel am PC eingerichtet, dafür benötigt man die Software URSALINK Toolbox in der aktuellen Version. Die erstmalige Einrichtung und Anbindung in eine TTN Application ist sehr gut in der Bedienungsanleitung vom Node beschrieben. Die Software kann bei Ursalink oder hier im Repo geladen werden.
 
 Nach der Einrichtung wird der Node mit dem Netzteil betrieben, damit auch der Sensor mit ausreichend Spannung (12 Volt) versorgt werden kann. Die Umrechnung der Stromstärke in Wassertiefe ist einfach und wird nach folgenden Überlegungen gemacht:
 
@@ -103,5 +112,3 @@ neuer Messwert 4,57mA werden in der TTN Console angezeigt.
  - [URSALINK NC11-N1       Sensornode](https://www.ursalink.com/en/n1-lorawan-sensor-node/)   
 - [Vegawell52 Water Level       Sensor](https://www.vega.com/de-de/produkte/ger%C3%A4tesuche?serialnumber=37987318) 
 - [Payload Decoder für die TTN Console (Original von    Ursalink)](https://github.com/Ursalink-CN/ursalink-decoder)
-
-
