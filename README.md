@@ -1,3 +1,5 @@
+Achtung: im Moment ist die interrne SPannungsversorgung auf der Hauptplatine abgeklemmt !!! (Grund: Sensor muß mit 12 VDC versorgt werden)
+
 # Lora-TTN-Vegawell52-Water-level-meter
 Vegawell52 with Ursalink UC11-N1 868MHz
 
